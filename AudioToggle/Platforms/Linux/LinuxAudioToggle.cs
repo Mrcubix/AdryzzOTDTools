@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using OpenTabletDriver.Plugin;
+using AudioSwitcher.AudioApi.CoreAudio;
+using AudioToggle.Entities;
 
 namespace AudioToggle.Platforms.Linux
 {
@@ -30,9 +32,20 @@ namespace AudioToggle.Platforms.Linux
             throw new NotImplementedException();
         }
 
+        public List<AudioDevice> GetPlaybackDevices()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<AudioDevice> GetCaptureDevices()
+        {
+            throw new NotImplementedException();
+        }
+
         public void ToggleOutputDevice(int index)
         {
             Log.Write("AudioToggle", "Toggle output Device" + index, LogLevel.Debug);
+
             if (index < 0)
             {
                 string output = ShellHelper.Bash("amixer sget 'Master'");
@@ -65,6 +78,7 @@ namespace AudioToggle.Platforms.Linux
                 }
             }
         }
+        
         public void ChangeOutputDevice(int Standard, int Comms)
         {
             throw new NotImplementedException();

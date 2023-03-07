@@ -338,3 +338,12 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# History vscode extension
+.history
+
+# Dotnet generated folders
+**/bin
+**/obj
+**/build
+UX

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AudioSwitcher.AudioApi.CoreAudio;
+using AudioToggle.Entities;
 
 namespace AudioToggle
 {
@@ -17,7 +19,8 @@ namespace AudioToggle
         void ChangeOutputDevice(int Standard, int Comms);
         void ChangeInputDevice(int Standard, int Comms);
 
-        void ListDevices();
+        List<AudioDevice> GetPlaybackDevices();
+        List<AudioDevice> GetCaptureDevices();
 
         bool Disposed { get; set; }
     }
