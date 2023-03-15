@@ -11,7 +11,6 @@ namespace AudioToggle.Capture
 
         protected static string[] Properties = Shared.CaptureDevices.Select(d => d.Name).ToArray();
 
-
         public override void ToggleMute()
         {
             if (Toggle == null || Toggle.Disposed)

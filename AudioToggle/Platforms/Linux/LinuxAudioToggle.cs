@@ -10,7 +10,6 @@ namespace AudioToggle.Platforms.Linux
         public bool Initialized { get; set; }
         public bool Disposed { get; set; }
 
-
         public void Dispose()
         {
             Disposed = true;
