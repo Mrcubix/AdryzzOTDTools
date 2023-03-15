@@ -13,20 +13,14 @@ namespace SoundPlayer
         public static int OutDevice = -1;
         public static bool StopSoundOnRelease = false;
 
-        public SoundPlayerTool()
-        {
-
-        }
+        public SoundPlayerTool() {}
 
         public bool Initialize()
         {
             return true;
         }
 
-        public void Dispose()
-        {
-
-        }
+        public void Dispose() {}
 
         [Property("Output device index"), DefaultPropertyValue(-1)]
         public int OutputDevice1 { get => OutDevice; set => OutDevice = value; }

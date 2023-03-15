@@ -39,7 +39,6 @@ namespace AudioToggle
                 foreach (var device in Shared.CaptureDevices)
                     Log.Write("AudioToggle", $"- Device: {device.Name}", LogLevel.Debug);
 
-
                 InitializeGroups();
 
                 Log.Write("AudioToggle", "Device Groups:", LogLevel.Debug);
@@ -51,7 +50,6 @@ namespace AudioToggle
             {
                 Log.Write("AudioToggle", $"Error initializing plugin: {e}", LogLevel.Error);
             }
-
         }
 
         public void Dispose()
@@ -87,7 +85,6 @@ namespace AudioToggle
 
         public void UpdateGroup(int index, AudioDevice defaultPlaybackDevice, AudioDevice defaultPlaybackComDevice, AudioDevice defaultCaptureDevice, AudioDevice defaultCaptureComDevice)
         {
-            
             if (DeviceGroups.Count > index)
                 try
                 {

@@ -23,7 +23,6 @@ namespace AudioToggle.Playback
 
         public static string[] ValidProperties => Properties;
         
-
         public void Press(TabletReference tablet, IDeviceReport report) => setDefault();
 
         public void Release(TabletReference tablet, IDeviceReport report)

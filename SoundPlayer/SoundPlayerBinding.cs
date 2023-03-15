@@ -5,7 +5,6 @@ using NAudio;
 
 namespace SoundPlayer
 {
-
     [PluginName("Sound Player")]
     public class SoundPlayerBinding : IValidateBinding, IBinding
     {

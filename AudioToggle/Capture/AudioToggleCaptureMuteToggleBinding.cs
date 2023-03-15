@@ -23,7 +23,6 @@ namespace AudioToggle.Capture
 
         public static string[] ValidProperties => Properties;
 
-        
         public void Press(TabletReference tablet, IDeviceReport report) => ToggleMute();
 
         public void Release(TabletReference tablet, IDeviceReport report)

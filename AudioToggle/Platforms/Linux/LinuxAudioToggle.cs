@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
 using OpenTabletDriver.Plugin;
-using AudioSwitcher.AudioApi.CoreAudio;
 using AudioToggle.Entities;
 
 namespace AudioToggle.Platforms.Linux

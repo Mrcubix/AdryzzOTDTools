@@ -36,7 +36,7 @@ namespace AudioToggle.Platforms.Windows
                 Initialize();
             }
 
-            return controller?.GetPlaybackDevices()?.ToList().Select(d => new AudioDevice(d)).ToList();
+            return controller.GetPlaybackDevices()?.ToList().Select(d => new AudioDevice(d)).ToList();
         }
 
         public List<AudioDevice> GetCaptureDevices()
@@ -46,7 +46,7 @@ namespace AudioToggle.Platforms.Windows
                 Initialize();
             }
 
-            return controller?.GetCaptureDevices()?.Select(d => new AudioDevice(d)).ToList();
+            return controller.GetCaptureDevices()?.Select(d => new AudioDevice(d)).ToList();
         }
 
         public bool TrueIsControllerDisposed()

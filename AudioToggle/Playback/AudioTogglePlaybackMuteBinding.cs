@@ -22,7 +22,6 @@ namespace AudioToggle.Playback
         }
 
         public static string[] ValidProperties => Properties;
-
         
         public void Press(TabletReference tablet, IDeviceReport report) => ToggleMute();
 
